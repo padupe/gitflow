@@ -4,4 +4,4 @@ Como é o processo?
 
 Teste Action :)
 
-Validar GitHub App
+Validar Personal Access Token
