@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Compare Development Time
         id: compare
-        uses: padupe/action-compare-development-time@1.0.0
+        uses: padupe/action-compare-development-time@master
         with:
           githubAppStrategy: false
           guithubToken: ${{ secrets.PAT_TOKEN }}
