@@ -1,0 +1,15 @@
+name: Compare
+on:
+  pull_request:
+    types: [opened, reopened]
+    
+jobs:
+  compare-time-development:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compare Development Time
+        id: compare
+        uses: padupe/action-compare-development-time@1.0.0
+        with:
+          githubAppStrategy: true
+          guithubToken: ${{ secrets.GITHUB_TOKEN }}
