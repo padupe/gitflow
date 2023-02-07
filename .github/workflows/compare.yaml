@@ -12,4 +12,4 @@ jobs:
         uses: padupe/action-compare-development-time@1.0.0
         with:
           githubAppStrategy: true
-          guithubToken: ${{ secrets.GITHUB_TOKEN }}
+          guithubToken: ${{ secrets.PAT_TOKEN }}
