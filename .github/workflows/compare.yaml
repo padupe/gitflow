@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Compare Development Time
         id: compare
-        uses: padupe/action-compare-development-time@1.2.0
+        uses: padupe/action-content-change-validation@master
         with:
+          authType: pat
+          directoryOrFile: test
           githubToken: ${{ secrets.PAT_TOKEN }}
