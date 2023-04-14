@@ -13,4 +13,5 @@ jobs:
         uses: padupe/action-content-change-validation@master
         with:
           authType: pat
+          directoryOrFile: test
           gitHubPersonalAccessToken: ${{ secrets.PAT_TOKEN }}
