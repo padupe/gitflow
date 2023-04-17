@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Content Change Validation
-        uses: padupe/action-content-change-validation@1.1.2
+        uses: padupe/action-content-change-validation@master
         with:
           directoryOrFile: .github/workflows
           gitHubToken: ${{ secrets.PAT_TOKEN }}
