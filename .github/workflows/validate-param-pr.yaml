@@ -1,0 +1,17 @@
+name: Validate Param at Pull Request
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches:
+      - main
+
+jobs:
+  content-change-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate Param at Pull Request
+        uses: padupe/action-content-change-validation@1.1.4
+        with:
+          gitHubToken: ${{ secrets.PAT_TOKEN }}
+          conditionalValue: '[x] Release'
+          valueThatMustExist: '[x] Docs'
