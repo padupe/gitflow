@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Validate Param at Pull Request
-        uses: padupe/action-validate-param-pr@1.0.0
+        uses: padupe/action-validate-param-pr@main
         with:
           conditionalValue: '[x] Release'
           valueThatMustExist: '[x] Docs'
